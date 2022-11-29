@@ -2,6 +2,8 @@ package org.sabourin.bd;
 
 import androidx.room.Dao;
 import androidx.room.Insert;
+import androidx.room.Query;
+
 import org.sabourin.modele.Personne;
 
 @Dao

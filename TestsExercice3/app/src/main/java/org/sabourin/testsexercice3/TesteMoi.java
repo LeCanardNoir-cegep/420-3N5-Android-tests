@@ -9,16 +9,20 @@ import java.util.List;
 
 public class TesteMoi {
 
-    // TODO 1 : Cette fonction brise un principe clé des tests unitaires. Quel est-il?
-    // TODO 2 : Modifier le code pour que cette méthode soit facilement testable
-    // TODO 3 : Écrire 3 tests et valider si le code est bon
-    public void comparerDix(int number){
+    // DONE 1 : Cette fonction brise un principe clé des tests unitaires. Quel est-il?
+    // DONE 2 : Modifier le code pour que cette méthode soit facilement testable
+    // DONE 3 : Écrire 3 tests et valider si le code est bon
+    // aucun retour !!!!!!!!
+    public String comparerDix(int number){
         if (number > 10){
-            System.out.println("notre " + number + "est plus petit que 10");
+            //System.out.println("notre " + number + "est plus petit que 10");
+            return "notre " + number + " est plus grand que 10";
         } else if (number == 10){
-            System.out.println("notre " + number + "est égal à 10");
+            //System.out.println("notre " + number + "est égal à 10");
+            return "notre " + number + " est égal à 10";
         } else {
-            System.out.println("notre " + number + "est plus grand que 10");
+            //System.out.println("notre " + number + "est plus grand que 10");
+            return "notre " + number + " est plus petit que 10";
         }
     }
 

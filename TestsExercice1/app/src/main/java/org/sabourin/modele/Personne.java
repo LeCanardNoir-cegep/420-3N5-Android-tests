@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Personne {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public Long idPersonne;
 
     public String nomPersonne;

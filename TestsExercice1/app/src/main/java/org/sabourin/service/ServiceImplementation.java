@@ -1,6 +1,9 @@
 package org.sabourin.service;
 
+import static org.sabourin.AppContants.*;
+
 import org.sabourin.bd.BD;
+import org.sabourin.exceptions.PersonneExecption;
 import org.sabourin.modele.Personne;
 
 public class ServiceImplementation{
@@ -20,9 +23,9 @@ public class ServiceImplementation{
         return single_instance;
     }
 
-
-    public void ajouterPersonne(Personne personne) {
+    public void ajouterPersonne(Personne personne) throws PersonneExecption {
         // Ajout
+        if(personne.idPersonne != null) throw new PersonneExecption(ERREUR_ID);
         personne.idPersonne = maBD.monDao().insertPersonne(personne);
     }
 }
